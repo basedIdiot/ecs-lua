@@ -248,7 +248,7 @@ local Component, System, Query = ECS.Component, ECS.System, ECS.Query
 local Position = Component({ x = 0, y = 0, z = 0 })
 local Acceleration = Component(0.1)
 
--- Sistems
+-- Systems
 local PositionLogSystem = System("process", 2, Query.All(Position), function(self, Time)
 
    -- Iterate through all entities in the query
